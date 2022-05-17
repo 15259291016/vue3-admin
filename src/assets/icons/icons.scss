@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'r4'; /* Project id 3407077 */
+  src: url('//at.alicdn.com/t/font_3407077_3tolxns4in.woff2?t=1652778939082')
+      format('woff2'),
+    url('//at.alicdn.com/t/font_3407077_3tolxns4in.woff?t=1652778939082')
+      format('woff'),
+    url('//at.alicdn.com/t/font_3407077_3tolxns4in.ttf?t=1652778939082')
+      format('truetype');
+}
+
+.r4 {
+  font-family: 'r4' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.r4-twitter:before {
+  content: '\e621';
+}
+
+.r4-gitee:before {
+  content: '\e622';
+}
+
+.r4-weixin:before {
+  content: '\e623';
+}
+
+.r4-alipay:before {
+  content: '\e624';
+}
+
+.r4-github:before {
+  content: '\e620';
+}
+
+.r4-password:before {
+  content: '\e61e';
+}
+
+.r4-user:before {
+  content: '\e61f';
+}
