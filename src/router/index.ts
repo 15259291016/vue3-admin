@@ -1,11 +1,15 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import NProgress from 'nprogress';
 
+// 布局组件
+import Layout from '@/layout/Layout.vue';
+
 /* 
   公开路由表
 */
 const publicRoutes = [
   { path: '/', component: () => import('@/views/login/index.vue') },
+  { path: '/home', name: 'Layout', component: () => Layout },
 ];
 
 const router = createRouter({

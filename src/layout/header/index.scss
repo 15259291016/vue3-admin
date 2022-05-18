@@ -1,0 +1,39 @@
+.header {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+
+  &-top {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      .fold {
+        height: 50px;
+        width: 35px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f3f5f7;
+        }
+
+        i {
+          position: relative;
+          top: 30%;
+        }
+      }
+    }
+
+    &-right {
+      width: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
