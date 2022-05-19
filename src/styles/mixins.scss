@@ -1,0 +1,6 @@
+// 添加hover阴影
+.hover-effect {
+  &:hover {
+    background-color: var(--hover-effect-color);
+  }
+}

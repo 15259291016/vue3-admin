@@ -27,6 +27,7 @@ const toggleLang = (lang: string) => {
 .i18n {
   .r4-lang {
     font-size: 20px;
+    color: var(--langselect-text-color);
   }
 }
 </style>

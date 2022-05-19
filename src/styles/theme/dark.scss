@@ -1,0 +1,26 @@
+body.dark-theme {
+  // common
+  --hover-effect-color: #242424;
+
+  // header
+  --header-bg-color: #151515; // 背景色
+  --header-text-color: #fff; // 文字颜色
+  --header-border-color: #303030; // 边框颜色
+  --langselect-text-color: #fff; // 语言切换图标颜色
+
+  // sidebar
+  --sidebar-bg-color: #212121; // 背景色
+  --sidebar-text-color: #ebebeb; // 文字颜色
+  --submenu-bg-color: #212121; // 子菜单颜色
+  --submenu-text-color: #ccc; // 子菜单文字颜色
+  --submenu-hover-text-color: #fff; // 子菜单hover文字颜色
+  --menuitem-bg-color: #2d2d2d; // 菜单项背景色
+
+  // main
+  --main-bg-color: #151515; // 背景色
+  --main-text-color: #fff; // 文字颜色
+
+  // drawer
+  --drawer-title-bg-color: #1f1f1f; // drawer 标题区域背景色
+  --drawer-title-text-color: #ccc; // drawer标题区域文字颜色
+}

@@ -1,23 +1,17 @@
 .header {
   height: 50px;
-  border-bottom: 1px solid #ccc;
-
+  border-bottom: 0.5px solid var(--header-border-color);
   &-top {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     &-left {
       .fold {
         height: 50px;
         width: 35px;
         text-align: center;
         cursor: pointer;
-
-        &:hover {
-          background-color: #f3f5f7;
-        }
 
         i {
           position: relative;
@@ -33,7 +27,11 @@
       align-items: center;
       i {
         font-size: 20px;
+        cursor: pointer;
       }
     }
+  }
+  &-tabs {
+    height: 100%;
   }
 }

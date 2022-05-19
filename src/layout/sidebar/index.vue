@@ -1,13 +1,25 @@
 <template>
-  <el-menu default-active="2" class="el-menu-vertical" :collapse="store.isFold">
-    <el-sub-menu index="1">
+  <el-menu unique-opened class="el-menu-vertical" :collapse="store.isFold">
+    <div class="logo">
+      vue3 admin
+    </div>
+    <el-sub-menu index="2">
       <template #title>
         <el-icon>
           <i class="r4 r4-dashboard"></i>
         </el-icon>
-        <span style="color: #fff;">Navigator One</span>
+        <span>Dashboard</span>
       </template>
-      <el-menu-item index="1-3">item three</el-menu-item>
+      <el-menu-item index="2-1">item one</el-menu-item>
+    </el-sub-menu>
+    <el-sub-menu index="3">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-dashboard"></i>
+        </el-icon>
+        <span>permission</span>
+      </template>
+      <el-menu-item index="3-1">item one</el-menu-item>
     </el-sub-menu>
   </el-menu>
 </template>
@@ -21,11 +33,17 @@ const store = useAppStore()
 <style scoped lang="scss">
 .el-menu-vertical {
   height: 100vh;
-  background-color: #001529;
+  border-right: unset;
 
   &:not(.el-menu--collapse) {
-    width: 200px;
+    width: 210px;
     min-height: 400px;
+  }
+
+  .logo {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
   }
 }
 </style>

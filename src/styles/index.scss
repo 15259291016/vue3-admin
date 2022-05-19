@@ -1,2 +1,5 @@
-@use './resetcss.scss';
-@use '../assets/icons/icons.scss';
+@import './resetcss.scss';
+@import '../assets/icons/icons.scss';
+@import './mixins.scss';
+@import './theme/light.scss';
+@import './theme/dark.scss';
