@@ -21,17 +21,64 @@
     }
 
     &-right {
-      width: 150px;
+      width: 250px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       i {
         font-size: 20px;
+        position: relative;
+        top: 30%;
+      }
+      .search-key {
+        border: 1px solid #ccc;
+        padding: 3px;
         cursor: pointer;
+        &:hover {
+          color: #42b883;
+          border-color: #42b883;
+        }
+      }
+      .search,
+      .fullscreen,
+      .bell,
+      .langSelect,
+      .setting {
+        height: 50px;
+        width: 35px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .langSelect {
+        padding-top: 16px;
+        box-sizing: border-box;
       }
     }
   }
   &-tabs {
     height: 100%;
   }
+}
+
+// search-key hover color
+.search-key-hover-color {
+  color: #42b883;
+  border-color: #42b883;
+}
+
+// search
+:deep(.el-dialog) {
+  margin-top: 9vh;
+  box-shadow: 0 0 1px 0.5px #999;
+  border-radius: 10px;
+  background-color: var(--header-bg-color);
+}
+:deep(.el-input__inner) {
+  font-size: 20px;
+}
+:deep(.el-input__wrapper) {
+  height: 45px;
+}
+:deep(.el-dialog__body) {
+  padding: 0 15px 10px 15px;
 }
