@@ -13,7 +13,28 @@ const publicRoutes = [
     name: 'Login',
     component: () => import('@/views/login/index.vue'),
   },
-  { path: '/home', name: 'Layout', component: Layout },
+  {
+    path: '/home',
+    name: 'Layout',
+    component: Layout,
+    children: [
+      {
+        path: '/analysis',
+        name: '分析页',
+        component: () => import('@/views/dashboard/analysis.vue'),
+      },
+      {
+        path: '/test',
+        name: '测试',
+        component: () => import('@/views/dashboard/test.vue'),
+      },
+      {
+        path: '/test2',
+        name: '测试2',
+        component: () => import('@/views/dashboard/test2.vue'),
+      },
+    ],
+  },
 ];
 
 const router = createRouter({

@@ -38,6 +38,8 @@ const props = defineProps({
   }
 })
 const emit = defineEmits(['update:isDialogVisible'])
+const router = useRouter()
+
 
 const searchText = ref<string>('') // 搜索框内容
 
@@ -79,5 +81,9 @@ const getRecent = (recent: number) => {
 :deep(.el-input__wrapper) {
   box-shadow: 0 0 0 1px #42b883;
   background-color: var(--search-bg-color);
+}
+
+:deep(.el-input__inner) {
+  color: var(--search-text-color);
 }
 </style>

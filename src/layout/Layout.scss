@@ -30,7 +30,7 @@
 }
 
 :deep(.el-menu-item.is-active) {
-  background-color: #0960bd;
+  background-color: var(--primary-color-green);
   color: #fff;
 }
 

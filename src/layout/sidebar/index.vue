@@ -1,25 +1,26 @@
 <template>
-  <el-menu unique-opened class="el-menu-vertical" :collapse="store.isFold">
+  <el-menu unique-opened class="el-menu-vertical" router :collapse="store.isFold">
     <div class="logo">
       vue3 admin
     </div>
-    <el-sub-menu index="2">
+    <el-sub-menu index="1">
       <template #title>
         <el-icon>
           <i class="r4 r4-dashboard"></i>
         </el-icon>
         <span>Dashboard</span>
       </template>
-      <el-menu-item index="2-1">item one</el-menu-item>
+      <el-menu-item index="/analysis">analysis</el-menu-item>
     </el-sub-menu>
-    <el-sub-menu index="3">
+    <el-sub-menu index="2">
       <template #title>
         <el-icon>
           <i class="r4 r4-dashboard"></i>
         </el-icon>
         <span>permission</span>
       </template>
-      <el-menu-item index="3-1">item one</el-menu-item>
+      <el-menu-item index="/test">测试</el-menu-item>
+      <el-menu-item index="/test2">测试2</el-menu-item>
     </el-sub-menu>
   </el-menu>
 </template>

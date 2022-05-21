@@ -4,3 +4,5 @@ export const LANG = 'language';
 export const ANIMATION_SWITCH = true;
 // 是否是深色模式
 export const THEME_SWITCH = false;
+// tagsview
+export const TAGS_VIEW = 'tagsView';

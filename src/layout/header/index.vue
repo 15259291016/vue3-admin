@@ -36,6 +36,10 @@
         <div class="langSelect hover-effect">
           <LangSelect />
         </div>
+        <!-- 用户信息区域 -->
+        <div class="userInfo">
+          <Avatar />
+        </div>
         <!-- 项目配置按钮 -->
         <div class="setting hover-effect" @click="isDrawerShow = true">
           <i class="r4 r4-setting"></i>
@@ -54,6 +58,7 @@ import { useAppStore } from '@/store/app'
 import ToolTip from '@/components/ToolTip/index.vue';
 import ThemeSelect from '@/components/ThemeSelect/index.vue';
 import Search from './components/search/index.vue';
+import Avatar from './components/avatar/index.vue';
 
 const store = useAppStore()
 
@@ -82,9 +87,8 @@ onMounted(() => {
   search?.addEventListener('mouseleave', () => {
     document.querySelector('.search-key')?.classList.remove('search-key-hover-color')
   })
-
-
 })
+
 
 </script>
 

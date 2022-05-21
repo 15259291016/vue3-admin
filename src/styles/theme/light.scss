@@ -13,7 +13,7 @@
   --sidebar-text-color: #000; // 文字颜色
   --submenu-bg-color: #ebf1f6; // 子菜单颜色
   --submenu-text-color: #000; // 子菜单文字颜色
-  --submenu-hover-text-color: #409eff; // 子菜单hover文字颜色
+  --submenu-hover-text-color: #42b883; // 子菜单hover文字颜色
   --menuitem-bg-color: #f4f6f9; // 菜单项背景色
 
   // main
@@ -27,4 +27,10 @@
   // search 组件
   --search-bg-color: #fff; // 搜索框组件背景颜色
   --search-text-color: #1f1f1f; // 搜索框文字颜色
+
+  // tagsview 组件
+  --tag-bg-color: #fff; // tag背景色
+
+  // element
+  --el-color-primary-light-9: #f6f6f6;
 }

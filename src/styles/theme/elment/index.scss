@@ -1,0 +1,9 @@
+:root {
+  --el-color-primary-light-3: unset;
+}
+
+// dropdown 样式
+.el-dropdown-menu {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+}

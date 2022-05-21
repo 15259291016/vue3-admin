@@ -7,9 +7,10 @@
       <el-container>
         <el-header>
           <Header />
+          <Tagsview />
         </el-header>
         <el-main>
-          foo
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -19,6 +20,7 @@
 <script setup lang="ts">
 import Sidebar from './sidebar/index.vue';
 import Header from './header/index.vue';
+import Tagsview from './header/components/tagsview/index.vue';
 
 </script>
 
