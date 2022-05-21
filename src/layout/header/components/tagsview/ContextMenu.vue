@@ -1,19 +1,19 @@
 <template>
   <ul class="box-card" v-show="isContextMenuShow" ref="target">
     <li class="hover-effect" @click="handleRefresh">
-      <span>重新加载</span>
+      <span> {{ $t('msg.contentMenu.refreshCurrent') }} </span>
     </li>
     <li class="hover-effect" @click="handleCloseTag">
-      <span>关闭标签页</span>
+      <span> {{ $t('msg.contentMenu.closeTag') }} </span>
     </li>
     <li class="hover-effect" @click="handleCloseLeftTags">
-      <span>关闭左侧标签页</span>
+      <span> {{ $t('msg.contentMenu.closeLeftTags') }} </span>
     </li>
     <li class="hover-effect" @click="handleCloseRightTags">
-      <span>关闭右侧标签页</span>
+      <span> {{ $t('msg.contentMenu.closeRightTags') }} </span>
     </li>
     <li class="hover-effect" @click="handleCloseOtherTags">
-      <span>关闭其他标签页</span>
+      <span> {{ $t('msg.contentMenu.closeOtherTags') }} </span>
     </li>
   </ul>
 </template>

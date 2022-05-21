@@ -12,13 +12,22 @@
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item command="document">
-          <i class="r4 r4-document" style="padding-bottom: 5px;"></i> <span>文档</span>
+          <i class="r4 r4-document" style="padding-bottom: 5px;"></i>
+          <span>
+            {{ $t('msg.userOperations.document') }}
+          </span>
         </el-dropdown-item>
         <el-dropdown-item command="lockScreen">
-          <i class="r4 r4-password" style="padding-bottom: 5px;"></i><span>锁定屏幕</span>
+          <i class="r4 r4-password" style="padding-bottom: 5px;"></i>
+          <span>
+            {{ $t('msg.userOperations.lockScreen') }}
+          </span>
         </el-dropdown-item>
         <el-dropdown-item command="logout">
-          <i class="r4 r4-poweroff" style="padding-bottom: 3px;"></i><span>退出系统</span>
+          <i class="r4 r4-poweroff" style="padding-bottom: 3px;"></i>
+          <span>
+            {{ $t('msg.userOperations.logout') }}
+          </span>
         </el-dropdown-item>
       </el-dropdown-menu>
     </template>

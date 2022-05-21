@@ -8,6 +8,7 @@ export const useAppStore = defineStore('app', {
     tagsViewList: JSON.parse(localStorage.getItem(TAGS_VIEW)!) || [], // tagsView
   }),
   getters: {
+    currentLang: (state) => state.lang,
     tags: (state) => state.tagsViewList,
   },
   actions: {

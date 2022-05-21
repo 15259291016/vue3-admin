@@ -2,13 +2,13 @@
   <el-drawer v-model="isDrawerShow" direction="rtl" @closed="handleClose" size="18%">
     <!-- 标题区域 -->
     <template #title>
-      <h4>项目配置</h4>
+      <h4> {{ $t('msg.projectConfiguration.configurationTitle') }} </h4>
     </template>
     <!-- 内容区域 -->
     <div class="body">
       <!-- 切换主题区域 -->
       <el-divider content-position="center">
-        <span>主题</span>
+        <span> {{ $t('msg.projectConfiguration.themeDivider') }} </span>
       </el-divider>
       <div class="body-switcher">
         <DarkSwitcher :active-icon="LightIcon" :inactive-icon="DarkIcon" />

@@ -3,8 +3,10 @@
     <i class="r4 r4-lang"></i>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item command="zh">中文简体</el-dropdown-item>
-        <el-dropdown-item command="en">English</el-dropdown-item>
+        <el-dropdown-item command="zh" :class="[store.currentLang === 'zh' ? 'item-active' : '']">中文简体
+        </el-dropdown-item>
+        <el-dropdown-item command="en" :class="[store.currentLang === 'en' ? 'item-active' : '']">English
+        </el-dropdown-item>
       </el-dropdown-menu>
     </template>
   </el-dropdown>

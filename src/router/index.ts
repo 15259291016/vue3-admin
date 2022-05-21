@@ -21,7 +21,7 @@ const publicRoutes = [
       {
         path: '/analysis',
         name: '分析页',
-        component: () => import('@/views/dashboard/analysis.vue'),
+        component: () => import('@/views/dashboard/analysis/analysis.vue'),
       },
       {
         path: '/test',

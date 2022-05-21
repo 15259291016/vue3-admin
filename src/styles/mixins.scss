@@ -5,3 +5,8 @@
     cursor: pointer;
   }
 }
+
+// 激活时的样式
+.item-active {
+  background-color: var(--primary-color-green);
+}

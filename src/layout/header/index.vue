@@ -13,7 +13,7 @@
           <span>Enter+s</span>
         </div>
         <!-- 头部搜索按钮 -->
-        <ToolTip content="search">
+        <ToolTip :content="$t('msg.header.searchIcon')">
           <div class="search hover-effect" @click="isDialogShow = true">
             <i class="r4 r4-search"></i>
           </div>
@@ -21,13 +21,13 @@
         <!-- 搜索框 -->
         <Search v-model:isDialogVisible="isDialogShow" />
         <!-- 头部通知按钮 -->
-        <ToolTip content="bell">
+        <ToolTip :content="$t('msg.header.bellIcon')">
           <div class="bell hover-effect">
             <i class="r4 r4-bell"></i>
           </div>
         </ToolTip>
         <!-- 头部全屏按钮 -->
-        <ToolTip content="fullscreen">
+        <ToolTip :content="$t('msg.header.fullScreenIcon')">
           <div class="fullscreen hover-effect" @click="toggle">
             <i :class="[isFullscreen ? 'r4 r4-fullscreen-shrink' : 'r4 r4-fullscreen']"></i>
           </div>
