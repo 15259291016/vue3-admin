@@ -1,5 +1,5 @@
 <template>
-  <div id="main" ref="myChart"></div>
+  <div id="line" ref="myChart"></div>
 </template>
 
 <script setup lang="ts">
@@ -28,7 +28,7 @@ echarts.use([
   UniversalTransition
 ]);
 onMounted(() => {
-  var chartDom = document.getElementById('main')!;
+  var chartDom = document.getElementById('line')!;
   var myChart = echarts.init(chartDom);
   var option;
 
@@ -136,8 +136,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-#main {
-  width: 79vw;
+#line {
+  width: 82vw;
   height: 48vh;
 }
 </style>

@@ -29,6 +29,14 @@ export default {
     themeDivider: '主题',
   },
 
+  // 搜索对话框
+  searchDialog: {
+    searchPlaceholder: '搜索...',
+    enter: '确认',
+    upAndDown: '选择',
+    esc: '退出',
+  },
+
   // 用户头像 dropdown 操作
   userOperations: {
     document: '文档',
@@ -46,4 +54,29 @@ export default {
   },
 
   /* /header */
+
+  /* 分析页 */
+  analysis: {
+    headerTagMonth: '月', // 头部tag 月
+    headerTagWeek: '周', // 头部tag 周
+    headerTagYear: '年', // 头部tag 年
+    visitCount: '访问数', // 访问数
+    visitAmount: '总访问数', // 总访问数
+    downloadCount: '下载数', // 下载数
+    downloadAmount: '总下载数', // 总下载数
+    orderCount: '成交数', // 成交数
+    orderAmount: '总成交数', // 总成交数
+    benefitCount: '成交额', // 成交额
+    benefitAmount: '总成交额', //总成交额
+
+    // 堆积折线图
+    trend: '流量趋势', // 流量趋势
+    // 饼图
+    conversionRates: '转化率', // 转化率
+    // k线图
+    compositeIndex: '上证指数', // 上证指数
+    // 旭日图
+    sunBurst: '旭日图', // 旭日图
+  },
+  /* /分析页 */
 };

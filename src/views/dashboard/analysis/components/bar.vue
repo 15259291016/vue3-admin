@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="bar">
 
   </div>
 </template>
@@ -17,7 +17,7 @@ type EChartsOption = echarts.ComposeOption<
 >;
 
 onMounted(() => {
-  var chartDom = document.getElementById('main')!;
+  var chartDom = document.getElementById('bar')!;
   var myChart = echarts.init(chartDom);
   var option: EChartsOption;
 
@@ -49,8 +49,8 @@ onMounted(() => {
 
 
 <style lang="scss" scoped>
-#main {
-  width: 80vw;
+#bar {
+  width: 85vw;
   height: 53vh;
 }
 </style>

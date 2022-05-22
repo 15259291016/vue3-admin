@@ -37,4 +37,5 @@ body.dark-theme {
 
   // element
   --el-color-primary-light-9: #242424;
+  --el-color-primary: var(--submenu-hover-text-color); // tabs菜单激活时的颜色
 }

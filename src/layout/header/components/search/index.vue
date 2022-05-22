@@ -1,8 +1,8 @@
 <template>
   <el-dialog v-model="props.isDialogVisible" width="36%" :show-close="false" @closed="handleClosed">
     <!-- 搜索框 -->
-    <el-input v-model="searchText" class="w-50 m-2" size="large" clearable placeholder="Search..."
-      :prefix-icon="SearchIcon">
+    <el-input v-model="searchText" class="w-50 m-2" size="large" clearable
+      :placeholder="$t('msg.searchDialog.searchPlaceholder')" :prefix-icon="SearchIcon">
     </el-input>
     <!-- 搜索内容 -->
     <div class="recent-wrap"><span style="color: #42b883;font-weight: 590; font-size: 17px">Recent</span></div>
@@ -11,16 +11,16 @@
       <div class="footer">
         <div class="enter">
           <i class="r4 r4-enter"></i>
-          <span>to select</span>
+          <span> {{ $t('msg.searchDialog.enter') }} </span>
         </div>
         <div class="up-down">
           <i class="r4 r4-up"></i>
           <i class="r4 r4-down"></i>
-          <span>to navigate</span>
+          <span> {{ $t('msg.searchDialog.upAndDown') }} </span>
         </div>
         <div class="esc">
           <p>Esc</p>
-          <span>to close</span>
+          <span> {{ $t('msg.searchDialog.esc') }} </span>
         </div>
       </div>
     </template>

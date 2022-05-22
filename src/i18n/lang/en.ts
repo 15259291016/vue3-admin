@@ -29,6 +29,14 @@ export default {
     themeDivider: 'Dark mode',
   },
 
+  // 搜索对话框
+  searchDialog: {
+    searchPlaceholder: 'Search...',
+    enter: 'to select',
+    upAndDown: 'to navigate',
+    esc: 'to close',
+  },
+
   // 用户头像 dropdown 操作
   userOperations: {
     document: 'document',
@@ -46,4 +54,29 @@ export default {
   },
 
   /* /header */
+
+  /* 分析页 */
+  analysis: {
+    headerTagMonth: 'month', // 头部tag 月
+    headerTagWeek: 'week', // 头部tag 周
+    headerTagYear: 'year', // 头部tag 年
+    visitCount: 'visits', // 访问数
+    visitAmount: 'visit amount', // 总访问数
+    downloadCount: 'downloads', // 下载数
+    downloadAmount: 'download amount', // 下载总数
+    orderCount: 'orders', // 成交数
+    orderAmount: 'order amount', // 总成交数
+    benefitCount: 'benefits', // 成交额
+    benefitAmount: 'benifit amount', //总成交额
+
+    // 堆积折线图
+    trend: 'trend', // 流量趋势
+    // 饼图
+    conversionRates: 'conversion rates', // 转化率
+    // k线图
+    compositeIndex: 'composite index', // 上证指数
+    // 旭日图
+    sunBurst: 'sunBurst', // 旭日图
+  },
+  /* /分析页 */
 };

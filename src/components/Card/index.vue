@@ -13,10 +13,14 @@
     <div class="body">
       <div class="body-item">
         <span class="count"> {{ count }} </span>
-        <img src="@/assets/images/visitCount.svg" v-if="props.headerTitle === '访问数'">
-        <img src="@/assets/images/orderCount.svg" v-if="props.headerTitle === '成交额'">
-        <img src="@/assets/images/downloadCount.svg" v-if="props.headerTitle === '下载数'">
-        <img src="@/assets/images/benefitCount.svg" v-if="props.headerTitle === '成交数'">
+        <img src="@/assets/images/visitCount.svg" v-if="headerTitle === '访问数'">
+        <img src="@/assets/images/visitCount.svg" v-if="headerTitle === 'visits'">
+        <img src="@/assets/images/orderCount.svg" v-if="headerTitle === '成交额'">
+        <img src="@/assets/images/orderCount.svg" v-if="headerTitle === 'benefits'">
+        <img src="@/assets/images/downloadCount.svg" v-if="headerTitle === '下载数'">
+        <img src="@/assets/images/downloadCount.svg" v-if="headerTitle === 'downloads'">
+        <img src="@/assets/images/benefitCount.svg" v-if="headerTitle === '成交数'">
+        <img src="@/assets/images/benefitCount.svg" v-if="headerTitle === 'orders'">
       </div>
       <div class="body-item">
         <span class="amountTitle"> {{ amountTitle }} </span>
@@ -61,18 +65,10 @@ const props = defineProps({
 
 })
 
-const url = ref<string>('@/assets/images/benefitCount.svg')
 
 </script>
 
 <style scoped lang="scss">
-:deep(.el-card__header),
-.el-card {
-  background-color: var(--card-bg-color);
-  color: var(--card-text-color);
-  border-color: var(--header-border-color);
-}
-
 .el-tag {
   border-color: var(--header-border-color);
 }
