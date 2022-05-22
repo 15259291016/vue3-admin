@@ -4,7 +4,7 @@
     <template #header>
       <div class="header">
         <span class="header-title"> {{ headerTitle }} </span>
-        <el-tag :type="[headerTitle === '访问数' ? 'warning' : '']">
+        <el-tag>
           <span> {{ headerTag }} </span>
         </el-tag>
       </div>

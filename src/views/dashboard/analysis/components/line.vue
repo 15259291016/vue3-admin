@@ -34,7 +34,7 @@ onMounted(() => {
 
   option = {
     title: {
-      text: 'Stacked Area Chart'
+      text: ''
     },
     tooltip: {
       trigger: 'axis',
@@ -46,7 +46,7 @@ onMounted(() => {
       }
     },
     legend: {
-      data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+      data: ['国内', '美国', '英国', '澳大利亚', '法国']
     },
     toolbox: {
       feature: {
@@ -63,7 +63,7 @@ onMounted(() => {
       {
         type: 'category',
         boundaryGap: false,
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
       }
     ],
     yAxis: [
@@ -73,17 +73,17 @@ onMounted(() => {
     ],
     series: [
       {
-        name: 'Email',
+        name: '国内',
         type: 'line',
         stack: 'Total',
         areaStyle: {},
         emphasis: {
           focus: 'series'
         },
-        data: [120, 132, 101, 134, 90, 230, 210]
+        data: [820, 932, 901, 934, 1290, 1330, 1320]
       },
       {
-        name: 'Union Ads',
+        name: '美国',
         type: 'line',
         stack: 'Total',
         areaStyle: {},
@@ -93,7 +93,7 @@ onMounted(() => {
         data: [220, 182, 191, 234, 290, 330, 310]
       },
       {
-        name: 'Video Ads',
+        name: '英国',
         type: 'line',
         stack: 'Total',
         areaStyle: {},
@@ -103,7 +103,7 @@ onMounted(() => {
         data: [150, 232, 201, 154, 190, 330, 410]
       },
       {
-        name: 'Direct',
+        name: '澳大利亚',
         type: 'line',
         stack: 'Total',
         areaStyle: {},
@@ -113,7 +113,7 @@ onMounted(() => {
         data: [320, 332, 301, 334, 390, 330, 320]
       },
       {
-        name: 'Search Engine',
+        name: '法国',
         type: 'line',
         stack: 'Total',
         label: {
@@ -124,7 +124,7 @@ onMounted(() => {
         emphasis: {
           focus: 'series'
         },
-        data: [820, 932, 901, 934, 1290, 1330, 1320]
+        data: [120, 132, 101, 134, 90, 230, 210]
       }
     ]
   };
@@ -137,7 +137,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 #main {
-  width: 1200px;
-  height: 600px;
+  width: 79vw;
+  height: 48vh;
 }
 </style>
