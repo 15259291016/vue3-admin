@@ -1,10 +1,10 @@
 <template>
-  <el-card>
+  <el-card class="card-hover-effect">
     <!-- 头部区域 -->
     <template #header>
       <div class="header">
         <span class="header-title"> {{ headerTitle }} </span>
-        <el-tag>
+        <el-tag :type="[headerTitle === '访问数' ? 'warning' : '']">
           <span> {{ headerTag }} </span>
         </el-tag>
       </div>
@@ -66,6 +66,17 @@ const url = ref<string>('@/assets/images/benefitCount.svg')
 </script>
 
 <style scoped lang="scss">
+:deep(.el-card__header),
+.el-card {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+  border-color: var(--header-border-color);
+}
+
+.el-tag {
+  border-color: var(--header-border-color);
+}
+
 .el-card {
   width: 24%;
 

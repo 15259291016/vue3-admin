@@ -13,7 +13,7 @@ specifiers:
   commitlint-config-cz: ^0.13.3
   cz-conventional-changelog: ^3.3.0
   cz-customizable: ^6.3.0
-  element-plus: 2.2.1
+  element-plus: 2.1.11
   eslint: ^8.14.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
@@ -37,7 +37,7 @@ dependencies:
   '@vueuse/core': 8.3.1_vue@3.2.33
   animate.css: 4.1.1
   axios: 0.27.2
-  element-plus: 2.2.1_vue@3.2.33
+  element-plus: 2.1.11_vue@3.2.33
   nprogress: 0.2.0
   pinia: 2.0.13_ytvqwwdyss532bvoq2clv4ed5m
   vue: 3.2.33
@@ -301,14 +301,14 @@ packages:
       - supports-color
     dev: true
 
-  /@floating-ui/core/0.7.1:
-    resolution: {integrity: sha512-grcqEmI8DTIolufpxhJagVeJmvloxBXE6xxSrVnSXz/Wz1uUIsC85ad+UNBqAoBOvzLxE42wvDj3YkmSGqWRxA==}
+  /@floating-ui/core/0.6.2:
+    resolution: {integrity: sha512-jktYRmZwmau63adUG3GKOAVCofBXkk55S/zQ94XOorAHhwqFIOFAy1rSp2N0Wp6/tGbe9V3u/ExlGZypyY17rg==}
     dev: false
 
-  /@floating-ui/dom/0.5.1:
-    resolution: {integrity: sha512-dkPSy5JPiQEtljc3VpG9lauYctxfLlqj/8N9f+lmsR92gQaSVMAWuBbFBH2keY5DmdQn3p4Dv1dQd+e8osH+/g==}
+  /@floating-ui/dom/0.4.5:
+    resolution: {integrity: sha512-b+prvQgJt8pieaKYMSJBXHxX/DYwdLsAWxKYqnO5dO2V4oo/TYBZJAUQCVNjTWWsrs6o4VDrNcP9+E70HAhJdw==}
     dependencies:
-      '@floating-ui/core': 0.7.1
+      '@floating-ui/core': 0.6.2
     dev: false
 
   /@humanwhocodes/config-array/0.9.5:
@@ -1251,14 +1251,14 @@ packages:
     resolution: {integrity: sha1-YMf4e9YrzGqJT6jM1q+3gjok90I=}
     dev: true
 
-  /element-plus/2.2.1_vue@3.2.33:
-    resolution: {integrity: sha512-+U3Rq6S2lrzgFWlO1IvqBRtWuOGfyA84OSJOTDC8DHG6XkbNE507Thueb+9Ghk8eIqjGtpvje5hEQRWOJ85+pA==}
+  /element-plus/2.1.11_vue@3.2.33:
+    resolution: {integrity: sha512-s4X0I8s787tv+9UdekBC1g7v42Fj4bucPAmu03EjbgrGrV7BJvkoBGuK52lNfu4yC76bl6Uyjesd5Fu8CMakSw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@ctrl/tinycolor': 3.4.1
       '@element-plus/icons-vue': 1.1.4_vue@3.2.33
-      '@floating-ui/dom': 0.5.1
+      '@floating-ui/dom': 0.4.5
       '@popperjs/core': /@sxzz/popperjs-es/2.11.7
       '@types/lodash': 4.14.182
       '@types/lodash-es': 4.17.6

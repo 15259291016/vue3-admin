@@ -10,3 +10,11 @@
 .item-active {
   background-color: var(--primary-color-green);
 }
+
+// 分析页卡片hover效果
+.card-hover-effect {
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
