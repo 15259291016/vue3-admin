@@ -10,14 +10,15 @@
         </el-icon>
         <span>Dashboard</span>
       </template>
-      <el-menu-item index="/analysis">analysis</el-menu-item>
+      <el-menu-item index="/analysis"> {{ $t('msg.sidebar.analysis') }} </el-menu-item>
+      <el-menu-item index="/workBench"> {{ $t('msg.sidebar.workBench') }} </el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="2">
       <template #title>
         <el-icon>
           <i class="r4 r4-dashboard"></i>
         </el-icon>
-        <span>permission</span>
+        <span>test</span>
       </template>
       <el-menu-item index="/test">测试</el-menu-item>
       <el-menu-item index="/test2">测试2</el-menu-item>

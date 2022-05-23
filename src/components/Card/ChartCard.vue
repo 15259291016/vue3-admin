@@ -20,7 +20,7 @@ const props = defineProps({
 <style scoped lang="scss">
 .el-card {
   margin-top: 10px;
-  width: 28vw;
+  width: 27vw;
   height: 40vh;
 }
 </style>

@@ -1,4 +1,5 @@
 export default {
+  /* 登录页 */
   login: {
     title: '登录',
     signInButton: '登录',
@@ -15,6 +16,7 @@ export default {
     usernameRule: '账号应该在3到5位之间',
     passwordRule: '密码应该在8到16位之间',
   },
+  /* /登录页 */
 
   /* header */
   header: {
@@ -54,6 +56,13 @@ export default {
   },
 
   /* /header */
+
+  /* sidebar */
+  sidebar: {
+    analysis: '分析页', // 分析页
+    workBench: '工作台', // 工作台
+  },
+  /* /sidebar */
 
   /* 分析页 */
   analysis: {

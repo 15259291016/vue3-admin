@@ -6,12 +6,15 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Card: typeof import('./components/Card/index.vue')['default']
+    CardItem: typeof import('./components/WorkBenchCard/card-item.vue')['default']
     ChartCard: typeof import('./components/Card/ChartCard.vue')['default']
     DarkSwitcher: typeof import('./components/ThemeSelect/components/darkSwitcher/index.vue')['default']
     DarkTheme: typeof import('./components/ThemeSelect/components/darkSwitcher/dark-theme.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
+    ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
+    ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElDialog: typeof import('element-plus/es')['ElDialog']
     ElDivider: typeof import('element-plus/es')['ElDivider']
@@ -19,6 +22,8 @@ declare module '@vue/runtime-core' {
     ElDropdown: typeof import('element-plus/es')['ElDropdown']
     ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
     ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
+    ElForm: typeof import('element-plus/es')['ElForm']
+    ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElInput: typeof import('element-plus/es')['ElInput']
@@ -33,10 +38,13 @@ declare module '@vue/runtime-core' {
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
     LangSelect: typeof import('./components/LangSelect/index.vue')['default']
     LightTheme: typeof import('./components/ThemeSelect/components/darkSwitcher/light-theme.vue')['default']
+    NewsCardItem: typeof import('./components/WorkBenchCard/news-card-item.vue')['default']
+    ProjectCardItem: typeof import('./components/WorkBenchCard/project-card-item.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ThemeSelect: typeof import('./components/ThemeSelect/index.vue')['default']
     ToolTip: typeof import('./components/ToolTip/index.vue')['default']
+    WorkBenchCard: typeof import('./components/WorkBenchCard/index.vue')['default']
   }
 }
 

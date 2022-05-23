@@ -1,4 +1,5 @@
 export default {
+  /* 登录页 */
   login: {
     title: 'Sign in',
     signInButton: 'Sign in',
@@ -15,6 +16,7 @@ export default {
     usernameRule: 'Length should be 3 to 5',
     passwordRule: 'Length should be 8 to 16',
   },
+  /* /登录页 */
 
   /* header */
   header: {
@@ -54,6 +56,13 @@ export default {
   },
 
   /* /header */
+
+  /* sidebar */
+  sidebar: {
+    analysis: 'analysis', // 分析页
+    workBench: 'workBench', // 工作台
+  },
+  /* /sidebar */
 
   /* 分析页 */
   analysis: {
