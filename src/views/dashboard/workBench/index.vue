@@ -69,7 +69,7 @@ onMounted(() => {
   nextTick(() => {
     setTimeout(() => {
       loading.value = false;
-    }, 1000);
+    }, 100);
   })
 })
 

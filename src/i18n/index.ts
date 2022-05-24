@@ -15,7 +15,7 @@ const messages = {
   },
 };
 
-const locale = 'zh';
+const locale = 'en';
 
 const i18n = createI18n({
   // 设为 false 才能使用组合式API

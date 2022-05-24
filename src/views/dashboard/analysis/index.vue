@@ -60,9 +60,7 @@ const loading = ref<boolean>(true) // 骨架屏加载状态
 
 onMounted(() => {
   nextTick(() => {
-    setTimeout(() => {
-      loading.value = false
-    }, 200);
+    loading.value = false
   })
 })
 

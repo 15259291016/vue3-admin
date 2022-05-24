@@ -23,7 +23,7 @@
             {{ $t('msg.userOperations.lockScreen') }}
           </span>
         </el-dropdown-item>
-        <el-dropdown-item command="logout">
+        <el-dropdown-item command="logout" @click="dialogVisible = true">
           <i class="r4 r4-poweroff" style="padding-bottom: 3px;"></i>
           <span>
             {{ $t('msg.userOperations.logout') }}
@@ -32,9 +32,24 @@
       </el-dropdown-menu>
     </template>
   </el-dropdown>
+  <el-dialog v-model="dialogVisible" title="温馨提醒" width="30%" :before-close="handleClose">
+    <span>是否确认退出系统?</span>
+    <template #footer>
+      <span class="dialog-footer">
+        <el-button @click="dialogVisible = false">取消</el-button>
+        <el-button type="primary" @click="$router.push('/')">确认</el-button>
+      </span>
+    </template>
+  </el-dialog>
 </template>
 
 <script setup lang="ts">
+
+const dialogVisible = ref(false)
+
+const handleClose = (done: () => void) => {
+
+}
 
 const router = useRouter()
 
@@ -52,5 +67,11 @@ const handleUserOperation = (operations: string) => {
   justify-content: center;
   align-items: center;
   height: 50px;
+}
+
+.el-button--primary {
+  --el-button-hover-text-color: var(--primary-color-green);
+  -el-button-hover-bg-color: unset;
+  --el-button-hover-border-color: var(--primary-color-green);
 }
 </style>

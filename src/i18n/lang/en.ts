@@ -55,6 +55,22 @@ export default {
     closeOtherTags: 'Close Other',
   },
 
+  // guide 引导功能
+  guide: {
+    close: 'close', // 关闭按钮
+    next: 'next', // 下一个
+    prev: 'preview', // 上一个
+    done: 'Done', // 完成
+    actionsTitle: 'user actions', // 用户操作
+    actionsDescription: 'this is the user actions area', // 用户操作区域
+    collapseTitle: 'collapse button', // 侧边栏折叠按钮
+    collapseDescription: 'this is the collaps and expand button', // 折叠和展开侧边栏按钮区域
+    tabsTitle: 'tabs', // 标签页
+    tabsDescription: 'this is the tabs area', // 切换标签页区域
+    sidebarTitle: 'siderbar', //侧边栏
+    sidebarDescription: 'this is the sidebar area', // 切换路由区域
+  },
+
   /* /header */
 
   /* sidebar */

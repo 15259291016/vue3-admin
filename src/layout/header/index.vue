@@ -2,16 +2,18 @@
   <div class="header">
     <!-- header头部 -->
     <div class="header-top">
-      <div class="header-top-left">
+      <div id="guide-collapse" class="header-top-left">
         <div class="fold hover-effect" @click="store.isFold = !store.isFold">
           <i :class="[store.isFold ? 'r4 r4-expand' : 'r4 r4-fold']"></i>
         </div>
       </div>
 
-      <div class="header-top-right">
+      <div id="guide-userAction" class="header-top-right">
+        <!-- 搜索快捷键 -->
         <div class="search-key" @click="isDialogShow = true">
           <span>Enter+s</span>
         </div>
+        <!-- /搜索快捷键 -->
         <!-- 头部搜索按钮 -->
         <ToolTip :content="$t('msg.header.searchIcon')">
           <div class="search hover-effect" @click="isDialogShow = true">
@@ -19,6 +21,11 @@
           </div>
         </ToolTip>
         <!-- 搜索框 -->
+        <!-- 引导功能 -->
+        <ToolTip content="guide">
+          <Guide />
+        </ToolTip>
+        <!-- /引导功能 -->
         <Search v-model:isDialogVisible="isDialogShow" />
         <!-- 头部通知按钮 -->
         <ToolTip :content="$t('msg.header.bellIcon')">
@@ -59,6 +66,7 @@ import ToolTip from '@/components/ToolTip/index.vue';
 import ThemeSelect from '@/components/ThemeSelect/index.vue';
 import Search from './components/search/index.vue';
 import Avatar from './components/avatar/index.vue';
+import Guide from '@/components/Guide/index.vue';
 
 const store = useAppStore()
 

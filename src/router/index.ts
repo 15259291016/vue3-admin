@@ -15,6 +15,7 @@ const publicRoutes = [
   },
   {
     path: '/home',
+    redirect: '/analysis',
     name: 'Layout',
     component: Layout,
     children: [
@@ -33,11 +34,13 @@ const publicRoutes = [
       {
         path: '/test',
         name: '测试',
+        meta: { enTitle: 'test' },
         component: () => import('@/views/dashboard/test.vue'),
       },
       {
         path: '/test2',
-        name: '测试2',
+        name: 'test2',
+        meta: { enTitle: 'workBench' },
         component: () => import('@/views/dashboard/test2.vue'),
       },
     ],

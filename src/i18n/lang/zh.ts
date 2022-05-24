@@ -55,6 +55,22 @@ export default {
     closeOtherTags: '关闭其他',
   },
 
+  // guide 引导功能
+  guide: {
+    close: '关闭', // 关闭按钮
+    next: '下一个', // 下一个
+    prev: '上一个', // 上一个
+    done: '完成', // 完成
+    actionsTitle: '用户操作', // 用户操作
+    actionsDescription: '用户操作区域', // 用户操作区域
+    collapseTitle: '侧边栏折叠按钮', // 侧边栏折叠按钮
+    collapseDescription: '折叠和展开侧边栏按钮区域', // 折叠和展开侧边栏按钮区域
+    tabsTitle: '标签页', // 标签页
+    tabsDescription: '切换标签页区域', // 切换标签页区域
+    sidebarTitle: '侧边栏', //侧边栏
+    sidebarDescription: '切换路由区域', // 切换路由区域
+  },
+
   /* /header */
 
   /* sidebar */
