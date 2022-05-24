@@ -1,8 +1,7 @@
 <template>
   <div class="tagsview">
     <router-link v-for="tag in store.tags" :key="tag.fullPath" class="tagsview-item"
-      :class="isActive(tag) ? 'active' : ''" :to="{ path: tag.fullPath }" @contextmenu.prevent="handleContextMenu(tag)">
-
+      :class="isActive(tag) ? 'active' : ''" :to="{ path: tag.path }" @contextmenu.prevent="handleContextMenu(tag)">
       <div class="item">
         <span>{{ store.lang === 'en' ? tag.title : tag.name }}</span>
         <i class="r4 r4-close" v-show="!isActive(tag)" @click.prevent="store.removeTag(tag)"></i>

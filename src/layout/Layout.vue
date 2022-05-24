@@ -10,7 +10,11 @@
           <Tagsview />
         </el-header>
         <el-main>
-          <router-view></router-view>
+          <router-view v-slot="{ Component, route }">
+            <transition name="fade">
+              <component :is='Component' :key="route.path"></component>
+            </transition>
+          </router-view>
         </el-main>
       </el-container>
     </el-container>
