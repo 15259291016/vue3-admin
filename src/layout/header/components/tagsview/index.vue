@@ -4,7 +4,7 @@
       :class="isActive(tag) ? 'active' : ''" :to="{ path: tag.fullPath }" @contextmenu.prevent="handleContextMenu(tag)">
 
       <div class="item">
-        <span>{{ tag.title }}</span>
+        <span>{{ store.lang === 'en' ? tag.title : tag.name }}</span>
         <i class="r4 r4-close" v-show="!isActive(tag)" @click.prevent="store.removeTag(tag)"></i>
       </div>
     </router-link>
@@ -19,7 +19,6 @@ import ContextMenu from './ContextMenu.vue';
 
 const store = useAppStore()
 const route = useRoute()
-const router = useRouter()
 
 // 是否被选中
 const isActive = (tag: any) => {

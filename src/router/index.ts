@@ -21,13 +21,13 @@ const publicRoutes = [
       {
         path: '/analysis',
         name: '分析页',
-        metadata: { enTitle: 'analysis' },
+        meta: { enTitle: 'analysis' },
         component: () => import('@/views/dashboard/analysis/index.vue'),
       },
       {
         path: '/workBench',
         name: '工作台',
-        metadata: { enTitle: 'workBench' },
+        meta: { enTitle: 'workBench' },
         component: () => import('@/views/dashboard/workBench/index.vue'),
       },
       {

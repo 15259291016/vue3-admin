@@ -91,6 +91,7 @@ onClickOutside(target, (event) => {
   padding: 5px;
   border-radius: 7px;
   font-size: 13px;
+  z-index: 10;
 }
 
 li {

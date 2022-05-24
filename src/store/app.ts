@@ -4,7 +4,7 @@ import { LANG, TAGS_VIEW } from '@/constant/index';
 export const useAppStore = defineStore('app', {
   state: () => ({
     isFold: false, // 侧边栏是否折叠
-    lang: localStorage.getItem(LANG) || 'zh', // 国际化
+    lang: JSON.parse(localStorage.getItem(LANG)!) || 'zh', // 国际化
     tagsViewList: JSON.parse(localStorage.getItem(TAGS_VIEW)!) || [], // tagsView
   }),
   getters: {

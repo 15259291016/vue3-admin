@@ -13,7 +13,8 @@ watch(route, (to, from) => {
   if (!isTags(to.path)) return
   const { fullPath, meta, name, params, path, query } = to
 
-  store.addTag({ fullPath, meta, name, params, path, query, title: name })
+  store.addTag({ fullPath, meta, name, params, path, query, title: meta.enTitle })
+
 
 }, {
   immediate: true
