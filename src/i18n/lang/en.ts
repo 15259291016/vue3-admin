@@ -88,4 +88,16 @@ export default {
     sunBurst: 'sunBurst', // 旭日图
   },
   /* /分析页 */
+
+  /* 工作台页 */
+  workBench: {
+    project: 'Project', // 项目
+    news: 'news', // 最新动态
+    more: 'more', //更多
+    toDO: 'toDo', // 待办
+    quickNav: 'quichk nav', // 快捷导航
+    budgetIndex: 'Budget Index', // 预算成本指数
+    team: 'team', // 团队成员
+  },
+  /* /工作台页 */
 };

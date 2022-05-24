@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'r4'; /* Project id 3407077 */
-  src: url('//at.alicdn.com/t/font_3407077_6gcovjp2hvu.woff2?t=1653097224099')
+  src: url('//at.alicdn.com/t/font_3407077_8kxpmytiiur.woff2?t=1653296403209')
       format('woff2'),
-    url('//at.alicdn.com/t/font_3407077_6gcovjp2hvu.woff?t=1653097224099')
+    url('//at.alicdn.com/t/font_3407077_8kxpmytiiur.woff?t=1653296403209')
       format('woff'),
-    url('//at.alicdn.com/t/font_3407077_6gcovjp2hvu.ttf?t=1653097224099')
+    url('//at.alicdn.com/t/font_3407077_8kxpmytiiur.ttf?t=1653296403209')
       format('truetype');
 }
 
@@ -14,6 +14,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.r4-plus:before {
+  content: '\e636';
 }
 
 .r4-poweroff:before {

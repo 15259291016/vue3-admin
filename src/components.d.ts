@@ -6,7 +6,6 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Card: typeof import('./components/Card/index.vue')['default']
-    CardItem: typeof import('./components/WorkBenchCard/card-item.vue')['default']
     ChartCard: typeof import('./components/Card/ChartCard.vue')['default']
     DarkSwitcher: typeof import('./components/ThemeSelect/components/darkSwitcher/index.vue')['default']
     DarkTheme: typeof import('./components/ThemeSelect/components/darkSwitcher/dark-theme.vue')['default']

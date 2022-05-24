@@ -12,7 +12,9 @@ const store = useAppStore()
 watch(route, (to, from) => {
   if (!isTags(to.path)) return
   const { fullPath, meta, name, params, path, query } = to
+
   store.addTag({ fullPath, meta, name, params, path, query, title: name })
+
 }, {
   immediate: true
 })

@@ -14,15 +14,15 @@
       </div>
       <div class="right">
         <div class="right-item">
-          <span>待办</span>
+          <span> {{ $t('msg.workBench.toDO') }} </span>
           <p>2/10</p>
         </div>
         <div class="right-item">
-          <span>项目</span>
+          <span> {{ $t('msg.workBench.project') }} </span>
           <p>8</p>
         </div>
         <div class="right-item">
-          <span>团队</span>
+          <span> {{ $t('msg.workBench.team') }} </span>
           <p>1</p>
         </div>
       </div>
@@ -32,16 +32,22 @@
     <div class="workBench-body">
       <div class="workBench-body-left">
         <div class="project">
-          <WorkBenchCard />
+          <WorkBenchCard :title="$t('msg.workBench.project')" />
         </div>
         <div class="news">
-          <WorkBenchCard title="最新动态" :is-project-card="false" />
+          <WorkBenchCard :title="$t('msg.workBench.news')" :is-project-card="false" />
         </div>
       </div>
       <div class="workBench-body-right">
-        <div class="quick-nav"></div>
-        <div class="index"></div>
-        <div class="team"></div>
+        <div class="quick-nav">
+          <QuickNav />
+        </div>
+        <div class="index">
+          <BudgetIndex />
+        </div>
+        <div class="team">
+          <Team />
+        </div>
       </div>
     </div>
     <!-- /工作台内容区域 -->
@@ -50,85 +56,12 @@
 
 <script setup lang="ts">
 import WorkBenchCard from '@/components/WorkBenchCard/index.vue';
+import QuickNav from './components/quick-nav.vue';
+import BudgetIndex from './components/budget-index.vue';
+import Team from './components/team.vue';
 
 </script>
 
 <style scoped lang="scss">
-.workBench {
-  &-header {
-    width: 100%;
-    height: 110px;
-    position: absolute;
-    box-sizing: border-box;
-    background-color: var(--card-bg-color);
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .left {
-      display: flex;
-      align-items: center;
-
-      .weather {
-        height: 100%;
-        margin-left: 20px;
-
-        p {
-          font-size: 20px;
-          padding-bottom: 1.5vh
-        }
-
-        span {
-          font-size: 14px;
-          color: #ccc;
-        }
-      }
-    }
-
-    .right {
-      width: 20vw;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      &-item {
-        text-align: center;
-
-        span {
-          color: #8f8f8f;
-        }
-
-        p {
-          padding-top: 1.5vh;
-          font-size: 30px;
-        }
-      }
-    }
-  }
-
-  &-body {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-
-    height: 80vh;
-
-    &-left {
-      width: 68%;
-
-      .news {
-        margin-top: 15px;
-      }
-    }
-
-    &-right {
-      width: 31%;
-      height: 100px;
-      background-color: green;
-    }
-  }
-}
+@import './index.scss';
 </style>

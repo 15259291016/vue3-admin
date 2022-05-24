@@ -50,6 +50,7 @@ const props = defineProps({
   &:hover {
     transform: scale(1.005);
     box-shadow: 0 0 0.5px 3px var(--hover-effect-color);
+    border: 1px solid var(--header-border-color) !important;
   }
 
   &-header {

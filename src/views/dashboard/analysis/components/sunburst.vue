@@ -103,6 +103,6 @@ onMounted(() => {
 <style scoped lang="scss">
 #sunburst {
   width: 28vw;
-  height: 38vh;
+  height: 34vh;
 }
 </style>

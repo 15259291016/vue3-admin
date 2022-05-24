@@ -2,7 +2,7 @@
   <el-card>
     <template #header>
       <span> {{ title }} </span>
-      <a href="">更多</a>
+      <a href=""> {{ $t('msg.workBench.more') }} </a>
     </template>
     <!-- 项目卡片 -->
     <div class="card" v-if="isProjectCard">
@@ -34,7 +34,7 @@
       </div>
     </div>
     <!-- /项目卡片 -->
-    <!-- 动态卡片 -->
+    <!-- 最新动态卡片 -->
     <div class="news" v-else>
       <NewsCardItem>
         <span class="team">在<span class="keyword">开源组</span> </span>
@@ -58,7 +58,7 @@
         <span class="action">发布文章<span class="keyword">如何进行性能优化？</span></span>
       </NewsCardItem>
     </div>
-    <!-- /动态卡片 -->
+    <!-- /最新动态卡片 -->
   </el-card>
 </template>
 
