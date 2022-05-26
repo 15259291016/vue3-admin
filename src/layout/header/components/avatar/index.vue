@@ -3,7 +3,7 @@
     <div class="info hover-effect">
       <!-- 头像区域 -->
       <div class="info-avatar">
-        <el-avatar :size="30" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" />
+        <el-avatar :size="30" src="https://s1.ax1x.com/2022/05/24/XPRY6S.png" />
       </div>
       <div class="info-name">
         <span>Rich4$t</span>

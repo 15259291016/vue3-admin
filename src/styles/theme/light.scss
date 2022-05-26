@@ -2,6 +2,7 @@
   // common
   --hover-effect-color: #f6f6f6;
   --skeleton-bg-color: #fff; // 骨架屏背景色
+  --app-card-bg-color: #fafafa; // 个人页中应用卡片的背景色
 
   // header
   --header-bg-color: #fff; // 背景色
@@ -39,4 +40,5 @@
   // element
   --el-color-primary-light-9: #f6f6f6;
   --el-color-primary: var(--submenu-hover-text-color); // tabs菜单激活时的颜色
+  --el-mask-color: rgba(255, 255, 255, 0.9); // 加载遮罩层的颜色
 }

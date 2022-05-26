@@ -8,7 +8,7 @@
     align-items: center;
     &-left {
       .fold {
-        height: 50px;
+        height: 45px;
         width: 35px;
         text-align: center;
         cursor: pointer;
@@ -41,16 +41,18 @@
       }
       .search,
       .fullscreen,
+      .guide,
       .bell,
       .langSelect,
       .setting {
-        height: 50px;
+        height: 45px;
         width: 35px;
         text-align: center;
         cursor: pointer;
       }
-      .langSelect {
-        padding-top: 16px;
+      .langSelect,
+      .guide {
+        padding-top: 14px;
         box-sizing: border-box;
       }
     }

@@ -2,6 +2,7 @@ body.dark-theme {
   // common
   --hover-effect-color: #242424;
   --skeleton-bg-color: #212121; // 骨架屏背景色
+  --app-card-bg-color: #212121; // 个人页中应用卡片的背景色
 
   // header
   --header-bg-color: #151515; // 背景色
@@ -14,7 +15,7 @@ body.dark-theme {
   --sidebar-text-color: #ebebeb; // 文字颜色
   --submenu-bg-color: #212121; // 子菜单颜色
   --submenu-text-color: #ccc; // 子菜单文字颜色
-  --submenu-hover-text-color: #fff; // 子菜单hover文字颜色
+  // --submenu-hover-text-color: #fff; // 子菜单hover文字颜色
   --menuitem-bg-color: #2d2d2d; // 菜单项背景色
 
   // main
@@ -39,4 +40,5 @@ body.dark-theme {
   // element
   --el-color-primary-light-9: #242424;
   --el-color-primary: var(--submenu-hover-text-color); // tabs菜单激活时的颜色
+  --el-mask-color: rgba(20, 20, 20, 0.6); // 加载遮罩层的颜色
 }

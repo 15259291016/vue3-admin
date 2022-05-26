@@ -1,58 +1,59 @@
 export default {
   /* 登录页 */
   login: {
-    title: 'Sign in',
-    signInButton: 'Sign in',
-    rememberMe: 'Remember me',
-    forgetPassword: 'Forgot password?',
-    mobileSignIn: 'Mobile Sign in',
-    qrCodeSingIn: 'Qr Code Sign in',
-    register: 'Register',
-    signInWith: 'Sign in with',
-    usernameTip: 'Please input username',
-    passwordTip: 'Please input password',
-    usernamePlaceholder: 'username',
-    passwordPlaceholder: 'password',
-    usernameRule: 'Length should be 3 to 5',
-    passwordRule: 'Length should be 8 to 16',
+    title: 'Sign in', // 登录标题
+    signInButton: 'Sign in', // 登录按钮
+    rememberMe: 'Remember me', // 记住密码选框
+    forgetPassword: 'Forgot password?', // 忘记密码
+    mobileSignIn: 'Mobile Sign in', // 通过手机登录
+    qrCodeSingIn: 'Qr Code Sign in', // 二维码登录
+    register: 'Register', // 注册
+    signInWith: 'Sign in with', // 其他登录方式文本
+    usernameTip: 'Please input username', // 登录账号验证规则
+    passwordTip: 'Please input password', // 密码验证规则
+    usernamePlaceholder: 'username', // 登录账号占位符placeholder
+    passwordPlaceholder: 'password', // 登录密码占位符placeholder
+    usernameRule: 'Length should be 3 to 5', // 登录密码占位符placeholder
+    passwordRule: 'Length should be 8 to 16', // 登录密码占位符placeholder
   },
   /* /登录页 */
 
   /* header */
   header: {
-    searchIcon: 'search',
-    bellIcon: 'notification',
-    fullScreenIcon: 'fullScreen',
+    searchIcon: 'search', // 搜索图标tooltip
+    guide: 'guide', // 引导页图标tooltip
+    bellIcon: 'notification', // 通知图标tooltip
+    fullScreenIcon: 'fullScreen', // 全屏图标tooltip
   },
 
   // settings 项目配置
   projectConfiguration: {
-    configurationTitle: 'Configuration',
-    themeDivider: 'Dark mode',
+    configurationTitle: 'Configuration', // 项目配置标题
+    themeDivider: 'Dark mode', // 主题配置
   },
 
   // 搜索对话框
   searchDialog: {
-    searchPlaceholder: 'Search...',
-    enter: 'to select',
-    upAndDown: 'to navigate',
-    esc: 'to close',
+    searchPlaceholder: 'Search...', // 搜索框占位符placeholder
+    enter: 'to select', // 回车
+    upAndDown: 'to navigate', // 上下键
+    esc: 'to close', // esc键
   },
 
   // 用户头像 dropdown 操作
   userOperations: {
-    document: 'document',
-    lockScreen: 'Lock Screen',
-    logout: 'Log Out',
+    document: 'document', // 文档
+    lockScreen: 'Lock Screen', // 锁定屏幕
+    logout: 'Log Out', // 退出系统
   },
 
   // contextMenu 右键菜单
   contentMenu: {
-    refreshCurrent: 'Refresh Current',
-    closeTag: 'Close',
-    closeLeftTags: 'Close to Left',
-    closeRightTags: 'Close to Right',
-    closeOtherTags: 'Close Other',
+    refreshCurrent: 'Refresh Current', // 刷新当前页面
+    closeTag: 'Close', // 关闭当前标签页
+    closeLeftTags: 'Close to Left', // 关闭左侧标签页
+    closeRightTags: 'Close to Right', // 关闭右侧标签页
+    closeOtherTags: 'Close Other', // 关闭其他标签页
   },
 
   // guide 引导功能

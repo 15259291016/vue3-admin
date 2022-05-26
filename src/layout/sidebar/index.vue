@@ -23,6 +23,16 @@
       <el-menu-item index="/test">测试</el-menu-item>
       <el-menu-item index="/test2">测试2</el-menu-item>
     </el-sub-menu>
+    <el-sub-menu index="profile">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-profile"></i>
+        </el-icon>
+        <span>个人页</span>
+      </template>
+      <el-menu-item index="/profile">个人中心</el-menu-item>
+      <el-menu-item index="/editProfile">个人设置</el-menu-item>
+    </el-sub-menu>
   </el-menu>
 </template>
 
@@ -30,7 +40,6 @@
 import { useAppStore } from '@/store/app'
 
 const store = useAppStore()
-const route = useRoute()
 </script>
 
 <style scoped lang="scss">

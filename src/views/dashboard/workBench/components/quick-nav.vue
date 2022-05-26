@@ -11,9 +11,9 @@
       <li class="item"><a href="">操作五</a> </li>
       <li class="item"><a href="">操作六</a> </li>
       <li class="item">
-        <a href="">
-          <el-tag type="success"><i class="r4 r4-plus"></i>添加</el-tag>
-        </a>
+        <el-button class="button-new-tag ml-1" size="small">
+          + 添加
+        </el-button>
       </li>
     </ul>
   </el-card>

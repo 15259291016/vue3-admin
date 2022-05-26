@@ -1,0 +1,35 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  &-left {
+    width: 28%;
+    height: 97.5vh;
+
+    .tags {
+      margin-top: 20px;
+      border-bottom: 1px solid var(--header-border-color);
+      padding-bottom: 25px;
+      &-item {
+        margin-top: 10px;
+        & .el-tag:not(first-child),
+        .button-new-tag {
+          margin-left: 8px;
+        }
+        .el-tag {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .team {
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &-right {
+    width: 70%;
+    height: 100%;
+    min-height: 97.5vh;
+  }
+}

@@ -32,6 +32,18 @@ const publicRoutes = [
         component: () => import('@/views/dashboard/workBench/index.vue'),
       },
       {
+        path: '/profile',
+        name: '个人中心',
+        meta: { enTitle: 'profile' },
+        component: () => import('@/views/profile/index.vue'),
+      },
+      {
+        path: '/editProfile',
+        name: '个人设置',
+        meta: { enTitle: 'edit-profile' },
+        component: () => import('@/views/profile/editProfile/index.vue'),
+      },
+      {
         path: '/test',
         name: '测试',
         meta: { enTitle: 'test' },
