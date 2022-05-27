@@ -33,6 +33,18 @@
       <el-menu-item index="/profile">个人中心</el-menu-item>
       <el-menu-item index="/editProfile">个人设置</el-menu-item>
     </el-sub-menu>
+    <el-sub-menu index="error">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-error"></i>
+        </el-icon>
+        <span>异常页</span>
+      </template>
+      <el-menu-item index="/403">403</el-menu-item>
+      <el-menu-item index="/404">404</el-menu-item>
+      <el-menu-item index="/500">500</el-menu-item>
+      <el-menu-item index="/empty">empty</el-menu-item>
+    </el-sub-menu>
   </el-menu>
 </template>
 

@@ -55,6 +55,36 @@ const publicRoutes = [
         meta: { enTitle: 'workBench' },
         component: () => import('@/views/dashboard/test2.vue'),
       },
+      {
+        path: '/403',
+        name: '403',
+        meta: { enTitle: '403' },
+        component: () => import('@/views/error-page/403.vue'),
+      },
+      {
+        path: '/404',
+        name: '404',
+        meta: { enTitle: '404' },
+        component: () => import('@/views/error-page/404.vue'),
+      },
+      {
+        path: '/404',
+        name: '404',
+        meta: { enTitle: '404' },
+        component: () => import('@/views/error-page/404.vue'),
+      },
+      {
+        path: '/500',
+        name: '500',
+        meta: { enTitle: '500' },
+        component: () => import('@/views/error-page/500.vue'),
+      },
+      {
+        path: '/empty',
+        name: '空状态',
+        meta: { enTitle: 'empty' },
+        component: () => import('@/views/error-page/empty.vue'),
+      },
     ],
   },
 ];

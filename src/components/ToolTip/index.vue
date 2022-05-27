@@ -1,5 +1,5 @@
 <template>
-  <el-tooltip effect="dark" :content="content" :placement="placement">
+  <el-tooltip effect="light" :content="content" :placement="placement">
     <slot></slot>
   </el-tooltip>
 </template>||

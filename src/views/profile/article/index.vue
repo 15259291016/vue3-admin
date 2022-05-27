@@ -51,10 +51,7 @@ const load = () => {
     text-align: center;
     margin-top: 20px;
 
-    .el-button {
-      border-color: var(--header-border-color);
-      background-color: var(--card-bg-color);
-    }
+
   }
 }
 

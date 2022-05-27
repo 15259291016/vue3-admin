@@ -7,3 +7,44 @@
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
 }
+// message 框样式
+.el-message {
+  min-width: auto !important;
+  padding: 10px 20px !important;
+  background-color: var(--card-bg-color) !important;
+  border: 1px solid var(--header-border-color) !important;
+  p {
+    color: var(--search-text-color) !important;
+  }
+}
+
+// input框样式
+.el-input__wrapper,
+.el-textarea__inner {
+  background-color: transparent !important;
+  border: 1px solid var(--header-border-color) !important;
+  color: #c9d1d2 !important;
+  box-shadow: unset !important;
+}
+
+// button样式
+.el-button {
+  border-color: var(--header-border-color) !important;
+  color: #fff;
+  background-color: var(--primary-color-green) !important;
+  &:hover {
+    color: #fff;
+    background-color: #30a872 !important;
+  }
+}
+
+.el-card__header,
+.el-card {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+  border-color: var(--header-border-color);
+}
+
+.el-tag {
+  border-color: var(--header-border-color) !important;
+}

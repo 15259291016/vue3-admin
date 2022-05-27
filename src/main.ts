@@ -7,6 +7,8 @@ import './styles/index.scss';
 import 'animate.css';
 // 引入 i18n
 import i18n from './i18n/index';
+// message 组件样式
+import 'element-plus/theme-chalk/src/message.scss';
 
 const app = createApp(App);
 

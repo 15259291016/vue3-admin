@@ -51,7 +51,6 @@ const handleClose = (done: () => void) => {
 
 }
 
-const router = useRouter()
 
 // 处理用户操作
 const handleUserOperation = (operations: string) => {
@@ -67,11 +66,5 @@ const handleUserOperation = (operations: string) => {
   justify-content: center;
   align-items: center;
   height: 50px;
-}
-
-.el-button--primary {
-  --el-button-hover-text-color: var(--primary-color-green);
-  -el-button-hover-bg-color: unset;
-  --el-button-hover-border-color: var(--primary-color-green);
 }
 </style>

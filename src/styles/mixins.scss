@@ -25,16 +25,6 @@
     cursor: pointer;
   }
 }
-.el-card__header,
-.el-card {
-  background-color: var(--card-bg-color);
-  color: var(--card-text-color);
-  border-color: var(--header-border-color);
-}
-
-.el-tag {
-  border-color: var(--header-border-color) !important;
-}
 
 // 个人页 应用 卡片 hover效果
 .card-hoverable {
