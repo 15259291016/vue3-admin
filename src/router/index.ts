@@ -44,18 +44,6 @@ const publicRoutes = [
         component: () => import('@/views/profile/editProfile/index.vue'),
       },
       {
-        path: '/test',
-        name: '测试',
-        meta: { enTitle: 'test' },
-        component: () => import('@/views/dashboard/test.vue'),
-      },
-      {
-        path: '/test2',
-        name: 'test2',
-        meta: { enTitle: 'workBench' },
-        component: () => import('@/views/dashboard/test2.vue'),
-      },
-      {
         path: '/403',
         name: '403',
         meta: { enTitle: '403' },
@@ -84,6 +72,18 @@ const publicRoutes = [
         name: '空状态',
         meta: { enTitle: 'empty' },
         component: () => import('@/views/error-page/empty.vue'),
+      },
+      {
+        path: '/success',
+        name: '成功页',
+        meta: { enTitle: 'success' },
+        component: () => import('@/views/result-page/success.vue'),
+      },
+      {
+        path: '/failure',
+        name: '失败页',
+        meta: { enTitle: 'failure' },
+        component: () => import('@/views/result-page/failure.vue'),
       },
     ],
   },

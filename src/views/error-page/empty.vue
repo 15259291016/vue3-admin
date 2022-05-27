@@ -2,7 +2,7 @@
   <div class="not-found-error">
     <img src="@/assets/images/empty.svg" alt="">
     <h2>当前页无数据</h2>
-    <el-button @click="$router.push('/analysis')">返回首页</el-button>
+    <el-button @click="$router.push('/analysis')" type="primary">返回首页</el-button>
   </div>
 </template>
 

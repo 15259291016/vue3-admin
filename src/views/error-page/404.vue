@@ -2,7 +2,7 @@
   <div class="not-found-error">
     <img src="@/assets/images/404.svg" alt="">
     <h2>抱歉，您访问的页面不存在。</h2>
-    <el-button @click="$router.push('/analysis')">返回首页</el-button>
+    <el-button @click="$router.push('/analysis')" type="primary">返回首页</el-button>
   </div>
 </template>
 

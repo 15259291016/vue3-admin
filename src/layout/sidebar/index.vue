@@ -13,16 +13,6 @@
       <el-menu-item index="/analysis"> {{ $t('msg.sidebar.analysis') }} </el-menu-item>
       <el-menu-item index="/workBench"> {{ $t('msg.sidebar.workBench') }} </el-menu-item>
     </el-sub-menu>
-    <el-sub-menu index="test">
-      <template #title>
-        <el-icon>
-          <i class="r4 r4-dashboard"></i>
-        </el-icon>
-        <span>test</span>
-      </template>
-      <el-menu-item index="/test">测试</el-menu-item>
-      <el-menu-item index="/test2">测试2</el-menu-item>
-    </el-sub-menu>
     <el-sub-menu index="profile">
       <template #title>
         <el-icon>
@@ -44,6 +34,16 @@
       <el-menu-item index="/404">404</el-menu-item>
       <el-menu-item index="/500">500</el-menu-item>
       <el-menu-item index="/empty">empty</el-menu-item>
+    </el-sub-menu>
+    <el-sub-menu index="result">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-checked"></i>
+        </el-icon>
+        <span>结果页</span>
+      </template>
+      <el-menu-item index="/success">成功</el-menu-item>
+      <el-menu-item index="/failure">失败</el-menu-item>
     </el-sub-menu>
   </el-menu>
 </template>

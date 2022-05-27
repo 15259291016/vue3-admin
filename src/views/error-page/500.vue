@@ -2,7 +2,7 @@
   <div class="not-found-error">
     <img src="@/assets/images/500.svg" alt="">
     <h2>抱歉，服务器报告错误。</h2>
-    <el-button @click="$router.push('/analysis')">返回首页</el-button>
+    <el-button @click="$router.push('/analysis')" type="primary">返回首页</el-button>
   </div>
 </template>
 
