@@ -85,6 +85,24 @@ const publicRoutes = [
         meta: { enTitle: 'failure' },
         component: () => import('@/views/result-page/failure.vue'),
       },
+      {
+        path: '/basicForm',
+        name: '基础表单',
+        meta: { enTitle: 'BasicForm' },
+        component: () => import('@/views/form-page/basicForm/index.vue'),
+      },
+      {
+        path: '/stepForm',
+        name: '分步表单',
+        meta: { enTitle: 'StepForm' },
+        component: () => import('@/views/form-page/stepForm/index.vue'),
+      },
+      {
+        path: '/advancedForm',
+        name: '高级表单',
+        meta: { enTitle: 'AdvancedForm' },
+        component: () => import('@/views/form-page/advancedForm/index.vue'),
+      },
     ],
   },
 ];
