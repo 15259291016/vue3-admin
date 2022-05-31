@@ -1,8 +1,17 @@
 <template>
-  <el-alert title="表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。" type="warning" />
+  <el-alert
+    title="表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。"
+    type="warning"
+  />
   <div class="basic-form">
-    <el-form ref="ruleFormRef" :model="ruleForm" :rules="rules" label-width="200px" class="demo-ruleForm"
-      :size="formSize">
+    <el-form
+      ref="ruleFormRef"
+      :model="ruleForm"
+      :rules="rules"
+      label-width="200px"
+      class="demo-ruleForm"
+      :size="formSize"
+    >
       <el-form-item label="标题" prop="name">
         <el-input v-model="ruleForm.name" />
       </el-form-item>
@@ -15,8 +24,13 @@
       <el-form-item label="起止日期" required>
         <el-col :span="11">
           <el-form-item prop="date1">
-            <el-date-picker v-model="ruleForm.date1" type="date" label="Pick a date" placeholder="选择日期"
-              style="width: 100%" />
+            <el-date-picker
+              v-model="ruleForm.date1"
+              type="date"
+              label="Pick a date"
+              placeholder="选择日期"
+              style="width: 100%"
+            />
           </el-form-item>
         </el-col>
         <el-col class="text-center" :span="2">
@@ -24,12 +38,21 @@
         </el-col>
         <el-col :span="11">
           <el-form-item prop="date2">
-            <el-time-picker v-model="ruleForm.date2" label="Pick a time" placeholder="选择时间" style="width: 100%" />
+            <el-time-picker
+              v-model="ruleForm.date2"
+              label="Pick a time"
+              placeholder="选择时间"
+              style="width: 100%"
+            />
           </el-form-item>
         </el-col>
       </el-form-item>
       <el-form-item label="立刻交付" prop="delivery">
-        <el-switch v-model="ruleForm.delivery" active-color="#13ce66" inactive-color="#ccc" />
+        <el-switch
+          v-model="ruleForm.delivery"
+          active-color="#13ce66"
+          inactive-color="#ccc"
+        />
       </el-form-item>
       <el-form-item label="活动类型" prop="type">
         <el-checkbox-group v-model="ruleForm.type">
@@ -53,18 +76,23 @@
         </el-radio-group>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="submitForm(ruleFormRef)">提交</el-button>
-        <el-button type="danger" @click="resetForm(ruleFormRef)">重置</el-button>
+        <el-button type="primary" @click="submitForm(ruleFormRef)"
+          >提交</el-button
+        >
+        <el-button type="danger" @click="resetForm(ruleFormRef)"
+          >重置</el-button
+        >
       </el-form-item>
     </el-form>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { FormInstance, FormRules } from 'element-plus'
+import type { FormInstance, FormRules } from 'element-plus';
+import type Node from 'element-plus/es/components/tree/src/model/node';
 
-const formSize = ref('default')
-const ruleFormRef = ref<FormInstance>()
+const formSize = ref('default');
+const ruleFormRef = ref<FormInstance>();
 const ruleForm = reactive({
   name: 'Hello',
   region: '',
@@ -75,7 +103,7 @@ const ruleForm = reactive({
   resource: '',
   desc: '',
   desc1: '',
-})
+});
 
 const rules = reactive<FormRules>({
   name: [
@@ -123,23 +151,23 @@ const rules = reactive<FormRules>({
   desc: [
     { required: true, message: 'Please input activity form', trigger: 'blur' },
   ],
-})
+});
 
 const submitForm = async (formEl: FormInstance | undefined) => {
-  if (!formEl) return
+  if (!formEl) return;
   await formEl.validate((valid, fields) => {
     if (valid) {
-      console.log('submit!')
+      console.log('submit!');
     } else {
-      console.log('error submit!', fields)
+      console.log('error submit!', fields);
     }
-  })
-}
+  });
+};
 
 const resetForm = (formEl: FormInstance | undefined) => {
-  if (!formEl) return
-  formEl.resetFields()
-}
+  if (!formEl) return;
+  formEl.resetFields();
+};
 </script>
 
 <style scoped lang="scss">

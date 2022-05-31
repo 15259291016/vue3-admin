@@ -103,6 +103,24 @@ const publicRoutes = [
         meta: { enTitle: 'AdvancedForm' },
         component: () => import('@/views/form-page/advancedForm/index.vue'),
       },
+      {
+        path: '/accountManager',
+        name: '账号管理',
+        meta: { enTitle: 'AccountManager' },
+        component: () => import('@/views/sys/account/index.vue'),
+      },
+      {
+        path: '/roleManager',
+        name: '角色管理',
+        meta: { enTitle: 'RoleManager' },
+        component: () => import('@/views/sys/role/index.vue'),
+      },
+      {
+        path: '/deptManager',
+        name: '部门管理',
+        meta: { enTitle: 'DeptManager' },
+        component: () => import('@/views/sys/department/index.vue'),
+      },
     ],
   },
 ];

@@ -1,5 +1,8 @@
 :root {
   --el-color-primary-light-3: unset;
+  --el-fill-color-blank: unset !important;
+  --el-fill-color-light: unset !important;
+  --el-tree-node-hover-bg-color: var(--submenu-hover-text-color) !important;
 }
 
 // dropdown 样式
@@ -62,5 +65,25 @@
 .el-checkbox__inner,
 .el-checkbox__inner {
   background-color: unset !important;
+  border-color: var(--header-border-color) !important;
+}
+
+.el-input-group__append {
+  box-shadow: unset !important;
+  border: 1px solid var(--header-border-color) !important;
+}
+
+// table 背景色
+.el-table,
+.el-table__row,
+.el-table__cell,
+.el-tree,
+.el-pager,
+.el-dialog__header,
+.el-dialog__body,
+.el-dialog__footer,
+.el-dialog {
+  background-color: var(--table-card-bg-color) !important;
+  color: var(--header-text-color) !important;
   border-color: var(--header-border-color) !important;
 }

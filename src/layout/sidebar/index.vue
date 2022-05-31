@@ -1,8 +1,11 @@
 <template>
-  <el-menu unique-opened class="el-menu-vertical" router :collapse="store.isFold">
-    <div class="logo">
-      vue3 admin
-    </div>
+  <el-menu
+    unique-opened
+    class="el-menu-vertical"
+    router
+    :collapse="store.isFold"
+  >
+    <div class="logo">vue3 admin</div>
     <!-- 仪表盘 -->
     <el-sub-menu index="analysis">
       <template #title>
@@ -11,8 +14,12 @@
         </el-icon>
         <span>Dashboard</span>
       </template>
-      <el-menu-item index="/analysis"> {{ $t('msg.sidebar.analysis') }} </el-menu-item>
-      <el-menu-item index="/workBench"> {{ $t('msg.sidebar.workBench') }} </el-menu-item>
+      <el-menu-item index="/analysis">
+        {{ $t('msg.sidebar.analysis') }}
+      </el-menu-item>
+      <el-menu-item index="/workBench">
+        {{ $t('msg.sidebar.workBench') }}
+      </el-menu-item>
     </el-sub-menu>
     <!-- 个人页 -->
     <el-sub-menu index="profile">
@@ -61,13 +68,25 @@
       <el-menu-item index="/stepForm">分步表单</el-menu-item>
       <el-menu-item index="/advancedForm">高级表单</el-menu-item>
     </el-sub-menu>
+    <!-- 系统管理页 -->
+    <el-sub-menu index="sys">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-setting"></i>
+        </el-icon>
+        <span>系统管理</span>
+      </template>
+      <el-menu-item index="/accountManager">账号管理</el-menu-item>
+      <el-menu-item index="/roleManager">角色管理</el-menu-item>
+      <el-menu-item index="/deptManager">部门管理</el-menu-item>
+    </el-sub-menu>
   </el-menu>
 </template>
 
 <script setup lang="ts">
-import { useAppStore } from '@/store/app'
+import { useAppStore } from '@/store/app';
 
-const store = useAppStore()
+const store = useAppStore();
 </script>
 
 <style scoped lang="scss">

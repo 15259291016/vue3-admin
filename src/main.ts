@@ -9,6 +9,8 @@ import 'animate.css';
 import i18n from './i18n/index';
 // message 组件样式
 import 'element-plus/theme-chalk/src/message.scss';
+// mock
+import './mock';
 
 const app = createApp(App);
 
