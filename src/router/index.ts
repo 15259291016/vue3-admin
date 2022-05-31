@@ -121,10 +121,33 @@ const publicRoutes = [
         meta: { enTitle: 'DeptManager' },
         component: () => import('@/views/sys/department/index.vue'),
       },
+      {
+        path: '/card',
+        name: '卡片',
+        meta: { enTitle: 'Card' },
+        component: () => import('@/views/components/card/index.vue'),
+      },
+      {
+        path: '/button',
+        name: '按钮',
+        meta: { enTitle: 'Button' },
+        component: () => import('@/views/components/button/index.vue'),
+      },
+      {
+        path: '/loader',
+        name: '加载',
+        meta: { enTitle: 'Loader' },
+        component: () => import('@/views/components/loading/index.vue'),
+      },
+      {
+        path: '/input',
+        name: '输入框',
+        meta: { enTitle: 'input' },
+        component: () => import('@/views/components/input/index.vue'),
+      },
     ],
   },
 ];
-
 const router = createRouter({
   history: createWebHashHistory(),
   // 配置路由表

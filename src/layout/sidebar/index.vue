@@ -60,7 +60,7 @@
     <el-sub-menu index="form">
       <template #title>
         <el-icon>
-          <i class="r4 r4-checked"></i>
+          <i class="r4 r4-document"></i>
         </el-icon>
         <span>表单页</span>
       </template>
@@ -69,7 +69,7 @@
       <el-menu-item index="/advancedForm">高级表单</el-menu-item>
     </el-sub-menu>
     <!-- 系统管理页 -->
-    <el-sub-menu index="sys">
+    <el-sub-menu index="sys" v-if="store.role === 'admin'">
       <template #title>
         <el-icon>
           <i class="r4 r4-setting"></i>
@@ -80,6 +80,29 @@
       <el-menu-item index="/roleManager">角色管理</el-menu-item>
       <el-menu-item index="/deptManager">部门管理</el-menu-item>
     </el-sub-menu>
+    <!-- 权限管理 -->
+    <el-sub-menu index="permission">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-permission"></i>
+        </el-icon>
+        <span>权限管理</span>
+      </template>
+      <el-menu-item index="/profile" @click="switchRole">切换权限</el-menu-item>
+    </el-sub-menu>
+    <!-- 组件页-->
+    <el-sub-menu index="components">
+      <template #title>
+        <el-icon>
+          <i class="r4 r4-components"></i>
+        </el-icon>
+        <span>组件</span>
+      </template>
+      <el-menu-item index="/card">卡片</el-menu-item>
+      <el-menu-item index="/button">按钮</el-menu-item>
+      <el-menu-item index="/loader">加载</el-menu-item>
+      <el-menu-item index="/input">输入框</el-menu-item>
+    </el-sub-menu>
   </el-menu>
 </template>
 
@@ -87,6 +110,17 @@
 import { useAppStore } from '@/store/app';
 
 const store = useAppStore();
+const router = useRouter();
+
+const switchRole = () => {
+  if (store.role === 'admin') {
+    localStorage.setItem('role', JSON.stringify('employ'));
+  } else {
+    localStorage.setItem('role', JSON.stringify('admin'));
+  }
+  location.reload();
+  router.push('/analysis');
+};
 </script>
 
 <style scoped lang="scss">

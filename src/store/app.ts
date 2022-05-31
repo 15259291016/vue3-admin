@@ -6,6 +6,7 @@ export const useAppStore = defineStore('app', {
     isFold: false, // 侧边栏是否折叠
     lang: JSON.parse(localStorage.getItem(LANG)!) || 'zh', // 国际化
     tagsViewList: JSON.parse(localStorage.getItem(TAGS_VIEW)!) || [], // tagsView
+    role: JSON.parse(localStorage.getItem('role')!) || '',
   }),
   getters: {
     currentLang: (state) => state.lang,
