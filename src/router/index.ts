@@ -104,6 +104,12 @@ const publicRoutes = [
         component: () => import('@/views/form-page/advancedForm/index.vue'),
       },
       {
+        path: '/keepAlive',
+        name: '页面缓存',
+        meta: { enTitle: 'keepAlive', keepAlive: true },
+        component: () => import('@/views/form-page/keepAlive/index.vue'),
+      },
+      {
         path: '/accountManager',
         name: '账号管理',
         meta: { enTitle: 'AccountManager' },

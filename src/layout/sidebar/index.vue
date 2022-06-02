@@ -67,6 +67,7 @@
       <el-menu-item index="/basicForm">基础表单</el-menu-item>
       <el-menu-item index="/stepForm">分步表单</el-menu-item>
       <el-menu-item index="/advancedForm">高级表单</el-menu-item>
+      <el-menu-item index="/keepAlive">页面缓存</el-menu-item>
     </el-sub-menu>
     <!-- 系统管理页 -->
     <el-sub-menu index="sys" v-if="store.role === 'admin'">

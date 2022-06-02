@@ -12,7 +12,9 @@
         <el-main>
           <router-view v-slot="{ Component, route }">
             <transition name="fade">
-              <component :is='Component' :key="route.path"></component>
+              <keep-alive include="keepAlive">
+                <component :is="Component" :key="route.path"></component>
+              </keep-alive>
             </transition>
           </router-view>
         </el-main>
@@ -25,7 +27,6 @@
 import Sidebar from './sidebar/index.vue';
 import Header from './header/index.vue';
 import Tagsview from './header/components/tagsview/index.vue';
-
 </script>
 
 <style scoped lang="scss">
