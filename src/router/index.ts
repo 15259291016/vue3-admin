@@ -151,6 +151,18 @@ const publicRoutes = [
         meta: { enTitle: 'input' },
         component: () => import('@/views/components/input/index.vue'),
       },
+      {
+        path: '/upload',
+        name: '文件上传',
+        meta: { enTitle: 'upload' },
+        component: () => import('@/views/components/upload/index.vue'),
+      },
+      {
+        path: '/flow',
+        name: '流程图',
+        meta: { enTitle: 'flow' },
+        component: () => import('@/views/flow/index.vue'),
+      },
     ],
   },
 ];

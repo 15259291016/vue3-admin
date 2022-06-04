@@ -103,7 +103,10 @@
       <el-menu-item index="/button">按钮</el-menu-item>
       <el-menu-item index="/loader">加载</el-menu-item>
       <el-menu-item index="/input">输入框</el-menu-item>
+      <el-menu-item index="/upload">文件上传下载</el-menu-item>
     </el-sub-menu>
+    <!-- 流程图 -->
+    <el-menu-item index="/flow">流程图</el-menu-item>
   </el-menu>
 </template>
 

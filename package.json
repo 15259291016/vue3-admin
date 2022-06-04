@@ -25,6 +25,8 @@
     }
   },
   "dependencies": {
+    "@logicflow/core": "^1.1.19",
+    "@logicflow/extension": "^1.1.19",
     "@types/lodash": "^4.14.182",
     "@vueuse/core": "^8.3.1",
     "animate.css": "^4.1.1",
@@ -39,7 +41,8 @@
     "vue": "^3.2.25",
     "vue-cropperjs": "^5.0.0",
     "vue-i18n": "9",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "xlsx": "0.17.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
